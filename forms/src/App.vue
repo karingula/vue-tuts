@@ -3,7 +3,10 @@
         <form>
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
-                    <h1>File a Complaint</h1>
+                    <h1 v-highlight:background.delayed="'red'"> File a Complaint! </h1>
+                    <h2 v-highlight="'purple'"> custom directive example </h2>
+                    <p v-text="'Some sample text'"></p>
+                    <p v-html="'<strong> Some strong text </strong>'"></p>
                     <hr>
                     <div class="form-group">
                         <label for="email">Mail</label>
