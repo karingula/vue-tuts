@@ -5,7 +5,7 @@
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                     <h1 v-highlight:background.delayed="'red'"> File a Complaint! </h1>
                     <h2 v-highlight="'purple'"> Custom Global directive example </h2>
-                    <h3 v-local-highlight="'lightcoral'"> Custom Local directive example </h3>
+                    <h3 v-local-highlight:background.delayed.blink="'lightcoral'"> Custom Local directive example </h3>
                     <p v-text="'Some sample text'"></p>
                     <p v-html="'<strong> Some strong text </strong>'"></p>
                     <hr>
@@ -181,13 +181,30 @@
                     if (binding.modifiers['delayed']) {
                         delay = 3000
                     }
-                    setTimeout(() => {
+                    if (binding.modifiers['blink']) {
+                        let mainColor = binding.value
+                        let secondColor = 'lightblue'
+                        let currentColor = mainColor
+                        setTimeout(() => {
+                            setInterval(()=> {
+                                currentColor == secondColor ? currentColor = mainColor : currentColor = secondColor
+                                if(binding.arg == 'background') {
+                                    el.style.backgroundColor = currentColor
+                                } else {
+                                    el.style.color = currentColor
+                                }
+                            }, 1000)
+                        }, delay)
+
+                    } else {
+                        setTimeout(() => {
                         if(binding.arg == 'background') {
                             el.style.backgroundColor = binding.value
                         } else {
                             el.style.color = binding.value
                         }
                     }, delay)
+                    }
                 }
             }
         },
