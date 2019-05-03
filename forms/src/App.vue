@@ -148,11 +148,17 @@
                 </div>
             </div>
         </div>
+        <hr>
+        <div class="row">
+                <my-filters></my-filters>
+            </div>
+        </div>
     </div>
 </template>
 
 <script>
     import Switch from './Switch.vue'
+    import Filters from './Filters.vue'
     export default {
         data() {
             return {
@@ -172,7 +178,8 @@
             }
         },
         components: {
-            mySwitch: Switch
+            mySwitch: Switch,
+            myFilters: Filters
         },
         directives: {
             'local-highlight': {

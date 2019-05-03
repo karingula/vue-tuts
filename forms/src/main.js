@@ -18,6 +18,7 @@ Vue.directive('highlight', {
     }, delay)
   }
 })
+
 new Vue({
   el: '#app',
   render: h => h(App)
