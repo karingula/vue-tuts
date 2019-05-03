@@ -5,7 +5,7 @@
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
                     <h1 v-highlight:background.delayed="'red'"> File a Complaint! </h1>
                     <h2 v-highlight="'purple'"> Custom Global directive example </h2>
-                    <h3 v-local-highlight:background.delayed.blink="'lightcoral'"> Custom Local directive example </h3>
+                    <h3 v-local-highlight:background.delayed.blink="{mainColor: 'lightblue', secondColor: 'orange', localDelay: 500}"> Custom Local directive example </h3>
                     <p v-text="'Some sample text'"></p>
                     <p v-html="'<strong> Some strong text </strong>'"></p>
                     <hr>
@@ -182,10 +182,11 @@
                         delay = 3000
                     }
                     if (binding.modifiers['blink']) {
-                        let mainColor = binding.value
-                        let secondColor = 'lightblue'
+                        let mainColor = binding.value.mainColor
+                        let secondColor = binding.value.secondColor
                         let currentColor = mainColor
                         setTimeout(() => {
+                            el.style.color = 'Blue'
                             setInterval(()=> {
                                 currentColor == secondColor ? currentColor = mainColor : currentColor = secondColor
                                 if(binding.arg == 'background') {
@@ -193,7 +194,7 @@
                                 } else {
                                     el.style.color = currentColor
                                 }
-                            }, 1000)
+                            }, binding.value.localDelay)
                         }, delay)
 
                     } else {
