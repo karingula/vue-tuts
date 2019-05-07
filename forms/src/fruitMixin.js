@@ -11,6 +11,9 @@ export const fruitMixin = {
                 return element.match(this.filterText)
             })
         }
+    },
+    created() {
+        console.log('Mixin Created')
     }
     
 }
