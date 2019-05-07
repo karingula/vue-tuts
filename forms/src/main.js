@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import App from './App.vue'
 
+// global directive
 Vue.directive('highlight', {
   bind(el, binding, vnode, oldnode) {
     //el.style.backgroundColor = 'lightgrey'
@@ -19,6 +20,7 @@ Vue.directive('highlight', {
   }
 })
 
+// global filter
 Vue.filter('to-lower-case', function(value) {
   return value.toLowerCase()
 })
