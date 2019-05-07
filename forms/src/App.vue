@@ -9,6 +9,7 @@
                     <p v-text="'Some sample text'"></p>
                     <p v-html="'<strong> Some strong text </strong>'"></p>
                     <hr>
+                    <h1> Forms </h1>
                     <div class="form-group">
                         <label for="email">Mail</label>
                         <input
@@ -149,9 +150,14 @@
             </div>
         </div>
         <hr>
+        <h1> Filters & Mixins </h1>
         <div class="row">
-                <my-filters></my-filters>
-            </div>
+            <my-filters></my-filters>
+        </div>
+        <hr>
+        <hr>
+        <div class="row">
+            <my-list></my-list>
         </div>
     </div>
 </template>
@@ -159,6 +165,7 @@
 <script>
     import Switch from './Switch.vue'
     import Filters from './Filters.vue'
+    import MyList from './MyList.vue'
     export default {
         data() {
             return {
@@ -179,7 +186,8 @@
         },
         components: {
             mySwitch: Switch,
-            myFilters: Filters
+            myFilters: Filters,
+            myList: MyList
         },
         directives: {
             'local-highlight': {
