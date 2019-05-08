@@ -1,5 +1,10 @@
 <template>
     <div class="container">
+        <div class="row">
+            <my-animation></my-animation>
+        </div>
+        <hr>
+        <br> <br>
         <form>
             <div class="row">
                 <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-6 col-md-offset-3">
@@ -157,11 +162,6 @@
         <hr>
         <div class="row">
             <my-list></my-list>
-        </div>
-        <hr>
-        <br> <br>
-        <div class="row">
-            <my-animation></my-animation>
         </div>
     </div>
 </template>
