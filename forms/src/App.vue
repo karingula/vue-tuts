@@ -155,9 +155,13 @@
             <my-filters></my-filters>
         </div>
         <hr>
-        <hr>
         <div class="row">
             <my-list></my-list>
+        </div>
+        <hr>
+        <br> <br>
+        <div class="row">
+            <my-animation></my-animation>
         </div>
     </div>
 </template>
@@ -166,6 +170,7 @@
     import Switch from './Switch.vue'
     import Filters from './Filters.vue'
     import MyList from './MyList.vue'
+    import Animation from './Animation.vue'
     export default {
         data() {
             return {
@@ -187,7 +192,8 @@
         components: {
             mySwitch: Switch,
             myFilters: Filters,
-            myList: MyList
+            myList: MyList,
+            myAnimation: Animation
         },
         directives: {
             'local-highlight': {
