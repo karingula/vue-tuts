@@ -29,6 +29,22 @@
                     <div class="alert alert-info" v-if="show" key="info"> This is some sample info </div>
                     <div class="alert alert-warning" v-else key="warning"> This is some sample Warning </div>
                 </transition>
+                <hr>
+                <button class="btn btn-primary" @click="load = !load">Load/Remove Element</button>
+                <br> <br>
+                <transition
+                    @before-enter="beforeEnter"
+                    @enter="enter"
+                    @after-enter="afterEnter"
+                    @enter-cancelled="enterCancelled"
+
+                    @before-leave="beforeLeave"
+                    @leave="leave"
+                    @after-leave="afterLeave"
+                    @leave-cancelled="leaveCancelled"
+                >
+                    <div style="width: 100px; height: 100px; background-color: cyan" v-if="load"></div>
+                </transition>
             </div>
         </div>
     </div>
@@ -39,7 +55,8 @@ export default {
     alertAnimation: 'fade',
     data() {
         return {
-            show: true,
+            show: false,
+            load: true
         }
     }
     
