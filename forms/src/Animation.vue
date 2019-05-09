@@ -58,6 +58,15 @@ export default {
             show: false,
             load: true
         }
+    },
+    methods: {
+        beforeEnter(el) {
+            console.log('beforeEnter')
+        },
+        enter(el, done) {
+            console.log('enter')
+            done();
+        }
     }
     
 }
