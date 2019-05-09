@@ -61,11 +61,30 @@ export default {
     },
     methods: {
         beforeEnter(el) {
-            console.log('beforeEnter')
+            console.log('beforeEnter');
         },
         enter(el, done) {
-            console.log('enter')
+            console.log('enter');
             done();
+        },
+        afterEnter(el) {
+            console.log('afterEnter');
+        },
+        enterCancelled(el) {
+            console.log('enterCancelled');
+        },
+        beforeLeave(el) {
+            console.log('beforeLeave');
+        },
+        leave(el, done) {
+            console.log('Leave');
+            done();
+        },
+        afterLeave(el) {
+            console.log('afterLeave');
+        },
+        leaveCancelled(el) {
+            console.log('leaveCancelled');
         }
     }
     
