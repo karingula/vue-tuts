@@ -163,6 +163,18 @@
         <div class="row">
             <my-list></my-list>
         </div>
+        <hr>
+        <div class="row">
+            <button class="btn btn-primary"
+                @click="selectedComponent == 'my-success' ? selectedComponent='my-danger': selectedComponent='my-success'"
+            >
+                Toggle
+            </button>
+            <br><br>
+            <transition name="fade" mode="out-in">
+                <component :is="selectedComponent"></component>
+            </transition>
+        </div>
     </div>
 </template>
 
@@ -171,6 +183,8 @@
     import Filters from './Filters.vue'
     import MyList from './MyList.vue'
     import Animation from './Animation.vue'
+    import Success from './SuccessAlert.vue'
+    import Danger from './DangerAlert.vue'
     export default {
         data() {
             return {
@@ -185,15 +199,17 @@
                 selectedPriority: 'High',
                 priorities: ['High', 'Medium', 'Low'],
                 dataSwitch: true,
-                isSubmitted: false
-
+                isSubmitted: false,
+                selectedComponent: 'my-success'
             }
         },
         components: {
             mySwitch: Switch,
             myFilters: Filters,
             myList: MyList,
-            myAnimation: Animation
+            myAnimation: Animation,
+            myDanger: Danger,
+            mySuccess: Success
         },
         directives: {
             'local-highlight': {
