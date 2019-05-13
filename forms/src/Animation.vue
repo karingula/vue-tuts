@@ -131,6 +131,9 @@ export default {
         opacity: 0;
         /*transform: translateY(20px);*/
     }
+    .slide-move {
+        transition: transform 1s;
+    }
     .slide-enter-active {
         transition: opacity 0.5s;
         animation: slide-in 1s ease-out forwards;
