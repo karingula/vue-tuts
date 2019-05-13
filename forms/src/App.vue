@@ -174,6 +174,22 @@
             <transition name="fade" mode="out-in">
                 <component :is="selectedComponent"></component>
             </transition>
+            <hr>
+            <button class="btn btn-primary" @click="addItem"> Add Item </button>
+            <br>
+            <ul class="list-group">
+                <transition-group name="slide">
+                    <li 
+                        class="list-group-item"
+                        v-for="(number, index) in sampleNumbers"
+                        @click="removeItem(index)"
+                        style="cursor: pointer"
+                        :key="number"
+                    >
+                        {{ number }}
+                    </li>
+                </transition-group>
+            </ul>
         </div>
     </div>
 </template>
@@ -200,7 +216,8 @@
                 priorities: ['High', 'Medium', 'Low'],
                 dataSwitch: true,
                 isSubmitted: false,
-                selectedComponent: 'my-success'
+                selectedComponent: 'my-success',
+                sampleNumbers: [1,2,3,4,5,6,7,8,9]
             }
         },
         components: {
@@ -249,6 +266,13 @@
         methods: {
             submitted() {
                 this.isSubmitted = true;
+            },
+            addItem() {
+                const pos = Math.floor(Math.random() * this.sampleNumbers.length);
+                this.sampleNumbers.splice(pos, 0, this.sampleNumbers.length + 1)
+            },
+            removeItem(index) {
+                this.sampleNumbers.splice(index, 1);
             }
         }
     }
