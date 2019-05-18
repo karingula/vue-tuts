@@ -139,7 +139,7 @@ export default {
         animation: slide-in 1s ease-out forwards;
     }
     .slide-leave {
-
+        /* Leave this empty*/
     }
     .slide-leave-active {
         animation: slide-out 1s ease-out forwards;
