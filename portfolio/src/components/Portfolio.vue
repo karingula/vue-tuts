@@ -46,13 +46,19 @@
                             <span class="caption">
                                 <span class="caption-content">
                                     <h2>{{ project.title }}</h2>
-                                    <p>{{ project.description }}</p>
+                                    <p class="mb-0">{{ project.description }}</p>
                                 </span>
                             </span>
+                            <img class="image-fluid" :src="require('../assets/'+project.img)">
                         </a>
-
                     </div>
                 </div>
+            </section>
+        </article>
+
+        <article class="blue-section">
+            <section>
+
             </section>
         </article>
     </div>
@@ -86,22 +92,22 @@ export default {
             ],
             recentProjects: [
                 {
-                    img: 'gallery01.jpg',
-                    title: 'Stationary',
+                    img: 'stationery.jpg',
+                    title: 'Stationery',
                     description: 'Loren Ipsum dolor sit amet'
                 },
                 {
-                    img: 'gallery02.jpg',
+                    img: 'ice-cream.jpg',
                     title: 'Ice Cream',
                     description: 'Loren Ipsum dolor sit amet'
                 },
                 {
-                    img: 'gallery03.jpg',
+                    img: 'strawberries.jpg',
                     title: 'Strawberries',
                     description: 'Loren Ipsum dolor sit amet'
                 },
                 {
-                    img: 'gallery04.jpg',
+                    img: 'work-space.jpg',
                     title: 'Workspace',
                     description: 'Loren Ipsum dolor sit amet'
                 }
@@ -122,7 +128,6 @@ export default {
         align-items: center;
         width: 100%;
         padding: 0 10px;
-
     }
 
     .btn-xl {
@@ -182,6 +187,49 @@ export default {
             padding-bottom: 30px;
             font-size: 1.25rem;
         }
+
+        .row {
+            padding-top: 50px;
+        }
+
+        .portfolio-item {
+            display: block;
+            position: relative;
+            overflow: hidden;
+
+            .caption {
+                display: flex;
+                height: 100%;
+                width: 100%;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                z-index: 1;
+                background-color: rgba($color: #000000, $alpha: .2);
+                transition: transform .2s linear;
+                
+                .caption-content {
+                    text-align: left;
+                    color: #fff;
+                    margin: auto 2rem 2rem;
+                }
+            }
+
+            img {
+                transition: transform .2s linear;
+            }
+
+            &:hover {
+                img {
+                    transform: scale(.9);
+                }
+
+                .caption {
+                    transform: scale(.9);
+                    background-color: rgba($color: #000000, $alpha: .5)
+                }
+            }
+        }        
     }
 
     .blue-section {
@@ -215,7 +263,6 @@ export default {
 
     i{
         font-size: 2rem;
-
     }
 </style>
 
