@@ -1,17 +1,17 @@
 <template>
     <div class="container-fluid px-0">
-        <article class="main-image">
+        <article id="app" class="main-image">
             <section>
                 <h1>Stylish Portfolio</h1>
                 <span> A sample sub-text </span>
-                <button class="btn btn-xl btn-light"> Find Out More</button>
+                <button class="btn btn-xl btn-light" @click="scrollTo('find-more')"> Find Out More</button>
             </section>
         </article>
         <article id="find-more" class="white-section">
             <section>
                 <h3>Stylish Portfolio is the perfect theme for your next project!</h3>
                 <span> Loren Ipsum dolor sit amet</span>
-                <button class="btn btn-xl btn-light"> What We Offer</button>
+                <button class="btn btn-xl btn-light" @click="scrollTo('offers')"> What We Offer</button>
             </section>
             <aticle>
                 <section></section>
@@ -34,7 +34,7 @@
         <article class="second-image">
             <section>
                 <h2> Welcome to <i>your</i><br>next website!</h2>
-                <button class="btn btn-xl btn-dark">Recent Projects</button>
+                <button class="btn btn-xl btn-dark" @click="scrollTo('recent-projects')">Recent Projects</button>
             </section>
         </article>
         <article id= "recent-projects" class="white-section">
@@ -57,8 +57,10 @@
         </article>
 
         <article class="blue-section">
-            <section>
-
+            <section class="container">
+                <h2>Have a nice day!</h2>
+                <button class="btn btn-xl btn-light mr-4" @click="scrollTo('app')">Click Me!</button>
+                <button class="btn btn-xl btn-dark" @click="scrollTo('app')">Look at Me!</button>
             </section>
         </article>
     </div>
@@ -112,6 +114,15 @@ export default {
                     description: 'Loren Ipsum dolor sit amet'
                 }
             ]
+        }
+    },
+    methods: {
+        scrollTo(element) {
+            const el = document.querySelector('#'+element);
+            el.scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            });
         }
     }
 }
