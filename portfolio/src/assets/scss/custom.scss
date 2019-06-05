@@ -1,6 +1,11 @@
 
 @import "node_modules/bootstrap/scss/bootstrap";
 
+.nav-link {
+    color: $black !important;
+}
+
 .nav-link:hover {
-    color: $purple !important
+    color: goldenrod !important;
+    font-weight: bold;
 }
