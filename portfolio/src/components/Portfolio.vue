@@ -2,7 +2,7 @@
     <div class="container-fluid px-0">
         <article id="app" class="main-image">
             <section>
-                <h1>Stylish Portfolio</h1>
+                <h1>Vue JS</h1>
                 <span> A sample sub-text </span>
                 <button class="btn btn-xl btn-light" @click="scrollTo('find-more')"> Find Out More</button>
             </section>
@@ -22,8 +22,7 @@
                 <h2>What We Offer</h2>
                 <div class="row">
                     <div class="col-lg-3 col-md-6 mb-5 mb-lg-0" v-for="(offer, index) in offers" :key="index">
-                        <div class="icon mx-auto">
-                            <i class="fas" :class="offer.icon"></i>
+                        <div class="icon mx-auto"><i class="fas" :class="offer.icon"></i>
                             <h4> {{ offer.title }}</h4>
                             <span> {{ offer.description }} </span>
                         </div>
