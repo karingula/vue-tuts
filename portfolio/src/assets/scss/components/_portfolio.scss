@@ -1,0 +1,149 @@
+
+@import url('https://use.fontawesome.com/releases/v5.8.2/css/all.css');
+@import url('https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css');
+@import url('https://fonts.googleapis.com/css?family=Cinzel+Decorative|Indie+Flower&display=swap');
+
+article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 0 10px;
+}
+
+.btn-xl {
+    padding: 20px 35px;
+    font-family: serif;
+    font-size: 1.25rem;
+}
+
+.main-image, .second-image {
+    min-height: 100vh;
+    background-size: cover;
+    padding: 0 10px;
+    text-align: center;
+
+    h1 {
+        font-size: 5rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+        text-shadow: 4px 4px 4px #aaa;
+        font-family: 'Cinzel Decorative', cursive;
+    }
+
+    h2 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 30px;
+    }
+
+    span {
+        display: block;
+        padding-bottom: 30px;
+        font-size: 1.6rem;
+        font-weight: bold;
+    }
+}
+
+.main-image {
+    background: url() center center;
+}
+
+.second-image {
+    background: url() center center;
+}
+
+.white-section {
+    padding: 120px 10px;
+    background-color: #fff;
+    text-align: center;
+
+    h3 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    span {
+        display: block;
+        padding-bottom: 30px;
+        font-size: 1.25rem;
+    }
+
+    .row {
+        padding-top: 50px;
+    }
+
+    .portfolio-item {
+        display: block;
+        position: relative;
+        overflow: hidden;
+
+        .caption {
+            display: flex;
+            height: 100%;
+            width: 100%;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            z-index: 1;
+            background-color: rgba($color: #000000, $alpha: .2);
+            transition: transform .2s linear;
+            
+            .caption-content {
+                text-align: left;
+                color: #fff;
+                margin: auto 2rem 2rem;
+            }
+        }
+
+        img {
+            transition: transform .2s linear;
+        }
+
+        &:hover {
+            img {
+                transform: scale(.9);
+            }
+
+            .caption {
+                transform: scale(.9);
+                background-color: rgba($color: #000000, $alpha: .5)
+            }
+        }
+    }        
+}
+
+.blue-section {
+    padding: 120px 10px;
+    background-color: #1d809f;
+    color: #fff;
+    text-align: center;
+}
+
+h2 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 50px;
+}
+
+h4 {
+    font-size: 1.6rem;
+    padding: 20px;
+}
+
+.icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 120px;
+    height: 120px;
+    background-color: #fff;
+    color: #1d809f;
+    border-radius: 50%
+}
+
+i{
+    font-size: 2rem;
+}
+
+

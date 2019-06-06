@@ -1,0 +1,18 @@
+
+@import "node_modules/bootstrap/scss/bootstrap";
+@import './components/portfolio';
+
+.menu {
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+
+.nav-link {
+    color: $red !important;
+}
+
+.nav-link:hover {
+    color: goldenrod !important;
+    font-weight: bold;
+}
