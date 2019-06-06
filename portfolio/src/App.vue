@@ -1,7 +1,7 @@
 <template>
   <div id="app">
     <navigation></navigation>
-    <dumbo></dumbo>
+    <portfolio></portfolio>
   </div>
 </template>
 
@@ -11,8 +11,8 @@ import Header from './components/Header.vue'
 export default {
   name: 'app',
   components: {
-    dumbo: Portfolio,
-    navigation: Header
+    navigation: Header,
+    portfolio: Portfolio
   }
 }
 </script>
