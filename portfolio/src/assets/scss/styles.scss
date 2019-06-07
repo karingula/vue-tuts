@@ -2,17 +2,47 @@
 @import "node_modules/bootstrap/scss/bootstrap";
 @import './components/portfolio';
 
-.menu {
-    width: 100%;
-    align-content: center;
-    justify-content: center;
-}
-
 .nav-link {
-    color: $red !important;
+    color: $black !important;
+    &:hover {
+        color: rgb(241, 23, 8) !important;
+        font-weight: bold;
+    }
 }
 
-.nav-link:hover {
-    color: goldenrod !important;
-    font-weight: bold;
+li {
+    display: list-item;
+}
+.nav-item {
+    font-weight: 400;
+    font-size: 1rem;
+    ::after {
+        box-sizing: border-box;
+    }
+    ::before {
+        box-sizing: border-box;
+    }
+}
+
+#mainNav {
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: transparent;
+    font-style: 'Avenir', Helvetica, Arial, sans-serif !important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: #2c3e50;
+    body {
+        background-color: black;
+    }
+}
+
+.navbar-expand-lg .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+}
+.navbar-collapse {
+    align-items: center;
+    flex-grow: 1;
 }
