@@ -1,7 +1,7 @@
 <template>
         <b-navbar class="navbar-expand-lg" toggleable="lg" fixed="top" id="mainNav">
             <div class="container">
-                <b-navbar-brand href="#page-top">Vue JS Bootstrap</b-navbar-brand>
+                <b-navbar-brand class="font-effect-shadow-multiple" href="#page-top">Vue JS Bootstrap</b-navbar-brand>
                 <div class="collapse navbar-collapse" id="navbarResponsive">
                     <ul class="navbar-nav text-uppercase ml-auto">
                         <li class="nav-item">

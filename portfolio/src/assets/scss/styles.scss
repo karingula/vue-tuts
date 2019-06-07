@@ -1,12 +1,14 @@
 
+$karingula-color: rgb(241, 23, 8);
+
 @import "node_modules/bootstrap/scss/bootstrap";
 @import './components/portfolio';
-@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Varela&display=swap&effect=shadow-multiple');
 
 .nav-link {
     color: $black !important;
     &:hover {
-        color: rgb(241, 23, 8) !important;
+        color: $karingula-color !important;
         font-weight: bold;
     }
 }
@@ -41,6 +43,8 @@ li {
 }
 
 .navbar-brand {
-    font-family: 'Kaushan Script', cursive;
-    font-size: 26px;
+    font-family: 'Varela', cursive;
+    font-size: 30px;
+    color: $karingula-color !important;
+    font-weight: 600
 }
