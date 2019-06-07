@@ -1,6 +1,7 @@
 
 @import "node_modules/bootstrap/scss/bootstrap";
 @import './components/portfolio';
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
 
 .nav-link {
     color: $black !important;
@@ -28,14 +29,6 @@ li {
     padding-top: 25px;
     padding-bottom: 25px;
     background-color: transparent;
-    font-style: 'Avenir', Helvetica, Arial, sans-serif !important;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-    text-align: center;
-    color: #2c3e50;
-    body {
-        background-color: black;
-    }
 }
 
 .navbar-expand-lg .navbar-collapse {
@@ -45,4 +38,9 @@ li {
 .navbar-collapse {
     align-items: center;
     flex-grow: 1;
+}
+
+.navbar-brand {
+    font-family: 'Kaushan Script', cursive;
+    font-size: 26px;
 }

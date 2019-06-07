@@ -1,18 +1,15 @@
 <template>
   <div id="app">
     <navigation></navigation>
-    <portfolio></portfolio>
   </div>
 </template>
 
 <script>
-import Portfolio from './components/Portfolio.vue'
-import Header from './components/Header.vue'
+import Navigation from './components/Navigation.vue'
 export default {
   name: 'app',
   components: {
-    navigation: Header,
-    portfolio: Portfolio
+    navigation: Navigation,
   }
 }
 </script>
