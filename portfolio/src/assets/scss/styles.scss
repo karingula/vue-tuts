@@ -3,7 +3,7 @@ $karingula-color: rgb(241, 23, 8);
 
 @import "node_modules/bootstrap/scss/bootstrap";
 @import './components/portfolio';
-@import url('https://fonts.googleapis.com/css?family=Varela&display=swap&effect=shadow-multiple');
+@import url('https://fonts.googleapis.com/css?family=Acme|Lobster&display=swap');
 
 .nav-link {
     color: $black !important;
@@ -28,23 +28,31 @@ li {
 }
 
 #mainNav {
-    padding-top: 25px;
-    padding-bottom: 25px;
-    background-color: transparent;
-}
-
-.navbar-expand-lg .navbar-collapse {
-    display: flex !important;
-    flex-basis: auto;
-}
-.navbar-collapse {
-    align-items: center;
-    flex-grow: 1;
+    padding-top: 5px;
+    padding-bottom: 0px;
+    background-color: mistyrose;
 }
 
 .navbar-brand {
-    font-family: 'Varela', cursive;
-    font-size: 30px;
+    font-family: 'Lobster';
+    font-size: 65px;
     color: $karingula-color !important;
-    font-weight: 600
+    font-weight: 600;
+    padding-left: 35px;
+}
+
+header {
+    text-align: center;
+    font-weight: 400 !important;
+    background-position: center center;
+    background-size: cover;
+    .container {
+        width: 100%;
+        .intro-text {
+            font-family: 'Acme', sans-serif;
+            .intro-lead-in {
+                font-style: italic !important;
+            }
+        }
+    }
 }
