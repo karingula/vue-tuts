@@ -7,6 +7,8 @@ $karingula-color: rgb(241, 23, 8);
 
 .nav-link {
     color: $black !important;
+    display: flex;
+    letter-spacing: 1px;
     &:hover {
         color: $karingula-color !important;
         font-weight: bold;
@@ -29,8 +31,9 @@ li {
 
 #mainNav {
     padding-top: 5px;
+    height: 65px;
     padding-bottom: 0px;
-    background-color: mistyrose;
+    background-color: rgb(175, 206, 216);
 }
 
 .navbar-brand {
@@ -46,13 +49,13 @@ header {
     font-weight: 400 !important;
     background-position: center center;
     background-size: cover;
-    .container {
+}
+
+.header-card {
+    b-card {
+        position: absolute;
         width: 100%;
-        .intro-text {
-            font-family: 'Acme', sans-serif;
-            .intro-lead-in {
-                font-style: italic !important;
-            }
-        }
+        opacity: 0.1;
+        width: 15px;
     }
 }
