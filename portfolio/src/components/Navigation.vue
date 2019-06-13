@@ -1,27 +1,11 @@
 <template>
-        <b-navbar class="navbar-expand-lg" toggleable="lg" fixed="top" id="mainNav">
-            <b-navbar-brand href="#page-top">V</b-navbar-brand>
-            <div class="container">
-                <div class="collapse navbar-collapse" id="navbarResponsive">
-                    <ul class="navbar-nav text-uppercase ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#home">Option1</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#portfolio">Option2</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#team">Option3</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#about">Option4</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="#contact">Option5</a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </b-navbar>
+    <b-navbar class="navbar-section">
+        <b-navbar-brand class=brand href="#page-top">V</b-navbar-brand>
+        <b-navbar-nav class="nav-section ml-auto">
+            <b-nav-item class="nav-item" href="#home"> Home </b-nav-item>
+            <b-nav-item class="nav-item" href="#services"> Services </b-nav-item>
+            <b-nav-item class="nav-item" href="#about"> About </b-nav-item>
+            <b-nav-item class="nav-item" href="#contact"> Contact </b-nav-item>
+        </b-navbar-nav>
+    </b-navbar>
 </template>
-
