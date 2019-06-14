@@ -40,33 +40,36 @@ header {
         padding-left: 35px;
         display: flex;
     }
-    .nav-links {
-        display: flex;
-        justify-content: space-between;
-        width: 35%;
-        list-style: none;
-        text-decoration: none !important;
-        .nav-item {
-            letter-spacing: 2px;
-            text-transform: uppercase;
-            font-family: 'Acme';
-            a{
-                color: black;
-                margin: 0 3rem;
-                padding: 1rem 0;
-                position: relative;
-                &::before{
-                    @include beforeAfterNavItem();
-                    top: 0;
-                }
-                &::after {
-                    @include beforeAfterNavItem();
-                    bottom: 0;
-                }
-                &:hover {
-                    text-decoration: none;
-                    &::before, &::after {
-                        transform: scaleX(1);
+    .nav-section {
+        .nav-links {
+            display: flex;
+            justify-content: space-between;
+            list-style: none;
+            text-decoration: none !important;
+            width: 95%;
+            padding-left: 10px;
+            .nav-item {
+                letter-spacing: 2px;
+                text-transform: uppercase;
+                font-family: 'Acme';
+                a{
+                    color: black;
+                    margin: 0 3rem;
+                    position: relative;
+                    padding: 12px 0px 12px 0px;
+                    &::before{
+                        @include beforeAfterNavItem();
+                        top: 0;
+                    }
+                    &::after {
+                        @include beforeAfterNavItem();
+                        bottom: 0;
+                    }
+                    &:hover {
+                        text-decoration: none;
+                        &::before, &::after {
+                            transform: scaleX(1);
+                        }
                     }
                 }
             }
