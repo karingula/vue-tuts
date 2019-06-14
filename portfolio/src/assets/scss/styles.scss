@@ -5,24 +5,23 @@ $karingula-color: crimson;
 @import './components/portfolio';
 @import url('https://fonts.googleapis.com/css?family=Acme|Lobster&display=swap');
 
+@mixin beforeAfterNavItem {
+    content: '';
+    position: relative;
+    height: 2px;
+    background-color: crimson;
+    left: 0;
+}
+
 header {
     width: 100%;
     height: 100vh;
     background: linear-gradient(to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)), url('../img/workstation.jpg') center no-repeat;
-    font-weight: 400 !important;
     background-size: cover;
     opacity: 0.2;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
-    .nav-options {
-        padding-right: 35px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        text-transform: uppercase;
-        font-size: 15px;
-    }
     .container {
         max-width: 120rem;
         width: 90%;
@@ -37,21 +36,27 @@ header {
         color: $karingula-color !important;
         font-weight: 500;
         padding-left: 35px;
+        display: flex;
     }
-    .nav-section{
+    .nav-links {
         display: flex;
         justify-content: space-between;
-        align-items: center;
+        width: 35%;
+        list-style: none;
+        text-decoration: none !important;
+        padding-right: 35px;
+        color: black !important;
         .nav-item {
-            font-weight: 400;
-            font-family: 'Acme';
-            letter-spacing: 1px;
+            letter-spacing: 2px;
             text-transform: uppercase;
-            &:hover {
-                color: $karingula-color !important;
-                font-weight: bold;
+            font-family: 'Acme';
+            a{
+                color: black;
+                &:hover {
+                    text-decoration: none !important;
+                    color: $karingula-color;
+                }
             }
         }
     }
 }
-
