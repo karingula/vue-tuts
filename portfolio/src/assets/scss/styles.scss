@@ -7,10 +7,12 @@ $karingula-color: crimson;
 
 @mixin beforeAfterNavItem {
     content: '';
-    position: relative;
+    position: absolute;
     height: 2px;
-    background-color: crimson;
+    width: 100%;
+    background-color:$karingula-color;
     left: 0;
+    transform: scaleX(0);
 }
 
 header {
@@ -44,17 +46,28 @@ header {
         width: 35%;
         list-style: none;
         text-decoration: none !important;
-        padding-right: 35px;
-        color: black !important;
         .nav-item {
             letter-spacing: 2px;
             text-transform: uppercase;
             font-family: 'Acme';
             a{
                 color: black;
+                margin: 0 3rem;
+                padding: 1rem 0;
+                position: relative;
+                &::before{
+                    @include beforeAfterNavItem();
+                    top: 0;
+                }
+                &::after {
+                    @include beforeAfterNavItem();
+                    bottom: 0;
+                }
                 &:hover {
-                    text-decoration: none !important;
-                    color: $karingula-color;
+                    text-decoration: none;
+                    &::before, &::after {
+                        transform: scaleX(1);
+                    }
                 }
             }
         }
