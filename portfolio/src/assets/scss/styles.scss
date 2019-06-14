@@ -43,15 +43,15 @@ header {
     .nav-section {
         .nav-links {
             display: flex;
-            justify-content: space-between;
             list-style: none;
             text-decoration: none !important;
             width: 95%;
-            padding-left: 10px;
             .nav-item {
                 letter-spacing: 2px;
                 text-transform: uppercase;
                 font-family: 'Acme';
+                margin-left: -24px !important;
+                margin-right: -19px !important;
                 a{
                     color: black;
                     margin: 0 3rem;
