@@ -1,5 +1,5 @@
 
-$karingula-color: crimson;
+$karingula-color:crimson;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 @import './components/portfolio';
@@ -13,6 +13,7 @@ $karingula-color: crimson;
     background-color:$karingula-color;
     left: 0;
     transform: scaleX(0);
+    transition: all .5s;
 }
 
 header {
@@ -57,13 +58,15 @@ header {
                     margin: 0 3rem;
                     position: relative;
                     padding: 12px 0px 12px 0px;
-                    &::before{
+                    &::before {
                         @include beforeAfterNavItem();
                         top: 0;
+                        transform-origin: left;
                     }
                     &::after {
                         @include beforeAfterNavItem();
                         bottom: 0;
+                        transform-origin: right;
                     }
                     &:hover {
                         text-decoration: none;
