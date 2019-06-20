@@ -4,16 +4,16 @@
         <b-navbar-nav class="ml-auto nav-section">
             <ul class="nav-links">
                 <li class="nav-item">
-                    <a href="#home"> Home </a>
+                    <router-link to="/home">Home</router-link>
                 </li>
                 <li class="nav-item">
-                    <a href="#services"> Services </a>
+                    <router-link to="/services">Services</router-link>
                 </li>
                 <li class="nav-item">
-                    <a href="#about"> About </a>
+                    <router-link to="/about">About</router-link>
                 </li>
                 <li class="nav-item">
-                    <a href="#contact"> Contact </a>
+                    <router-link to="/contact">Contact</router-link>
                 </li>
             </ul>
         </b-navbar-nav>
