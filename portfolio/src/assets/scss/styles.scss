@@ -3,6 +3,7 @@ $karingula-color:crimson;
 
 @import "node_modules/bootstrap/scss/bootstrap";
 @import './components/portfolio';
+@import './components/contact';
 @import url('https://fonts.googleapis.com/css?family=Acme|Lobster&display=swap');
 
 @mixin beforeAfterNavItem {
@@ -79,3 +80,4 @@ header {
         }
     }
 }
+
