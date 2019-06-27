@@ -1,0 +1,21 @@
+
+#container {
+    min-width: 100%;
+    z-index: 9997;
+    margin: auto;
+    position: relative;
+
+}
+
+#contact-title {
+    font-weight: 700;
+    font-family: 'Acme';
+    letter-spacing: 2px;
+    z-index: 99;
+    margin-left: 8%;
+    margin-right: 8%;
+    margin-top: 75px;
+    .greetings {
+        color: $karingula-color;
+    }
+}
