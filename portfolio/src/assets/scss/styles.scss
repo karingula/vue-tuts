@@ -4,7 +4,7 @@ $karingula-color:crimson;
 @import "node_modules/bootstrap/scss/bootstrap";
 @import './components/portfolio';
 @import './components/contact';
-@import url('https://fonts.googleapis.com/css?family=Acme|Lobster&display=swap');
+@import url('https://fonts.googleapis.com/css?family=PT+Serif|Acme|Lobster|Dancing+Script&display=swap');
 
 @mixin beforeAfterNavItem {
     content: '';
