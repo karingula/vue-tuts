@@ -1,17 +1,17 @@
 
 #container {
-    min-width: 100%;
     z-index: 9997;
     margin: auto;
-    position: relative;
+    position: absolute;
     margin-left: 8%;
+    margin-right: 8%;
+    width: auto !important;
     #contact-title {
         font-weight: 600;
         font-family: 'PT Serif', serif;
         font-size: 2rem;
         letter-spacing: 1.5px;
         z-index: 99;
-        margin-right: 8%;
         margin-top: 75px;
         .greetings {
             color: $karingula-color;
@@ -21,7 +21,6 @@
         }
     }
     .wrapper {
-        float: left;
         line-height: 1.7rem;
         vertical-align: text-top;
         color: #888;
@@ -29,8 +28,26 @@
         position: relative;
         margin-top: 50px;
         .col-l {
+            float:left;
             width: 50%;
             padding-right: 30px;
+            .contact-label {
+                display: block;
+                .notes {
+                    font-size: 0.75rem;
+                }
+                a {
+                    color: black;
+                    &:hover {
+                        color: $karingula-color;
+                    }
+                }
+            }
+        }
+        .col-r {
+            float: right;
+            width: 50%;
+            padding-left: 30px;
         }
     }
 }
