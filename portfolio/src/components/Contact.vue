@@ -12,8 +12,33 @@
                     sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam.
                 </p>
+                <div class="contact-label">
+                    <span class = "notes" style="margin-top: 60px;">Need help?</span><br/>
+                    <a href="mailto:vingula01@gmail.com">vingula01@gmail.com</a>
+                </div>
+            </div>
+            <div class="col-r" style="margin-bottom: 60px;">
+                <p>
+                    how are you
+                </p>
             </div>
         </div>
     </div>
 </template>
+
+
+<script>
+export default {
+    data() {
+        return {
+            form: {
+                name: '',
+                email: '',
+                message: ''
+            }
+        }
+    }
+}
+</script>
+
 
