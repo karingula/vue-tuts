@@ -18,9 +18,14 @@
                 </div>
             </div>
             <div class="col-r" style="margin-bottom: 60px;">
-                <p>
-                    how are you
-                </p>
+                <b-form-group>
+                    <b-form-input placeholder=" Name">
+
+                    </b-form-input> <br>
+                    <b-form-input placeholder=" E-mail">
+                        
+                    </b-form-input>
+                </b-form-group>
             </div>
         </div>
     </div>
