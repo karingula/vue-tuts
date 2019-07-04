@@ -20,11 +20,17 @@
             <div class="col-r" style="margin-bottom: 60px;">
                 <b-form-group>
                     <b-form-input placeholder=" Name">
-
                     </b-form-input> <br>
                     <b-form-input placeholder=" E-mail">
-                        
-                    </b-form-input>
+                    </b-form-input> <br>
+                    <b-form-textarea
+                    placeholder="What are you writing about?"
+                    rows="7">
+                    </b-form-textarea>
+                    <div class="flex">
+                        <b-button class="btn" type="submit" variant="light">Send Over</b-button>
+                    </div>
+                    
                 </b-form-group>
             </div>
         </div>
