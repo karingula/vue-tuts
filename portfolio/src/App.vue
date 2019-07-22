@@ -1,8 +1,8 @@
 <template>
   <div id="app">
-    <navigation></navigation>
+    <navigation />
     <!-- <app-header></app-header> -->
-    <router-view></router-view>
+    <router-view />
   </div>
 </template>
 
@@ -10,7 +10,7 @@
 // import Header from './components/Header.vue'
 import Navigation from "./components/Navigation.vue";
 export default {
-  name: "app",
+  name: "PortfolioApp",
   components: {
     navigation: Navigation
     // appHeader: Header,
