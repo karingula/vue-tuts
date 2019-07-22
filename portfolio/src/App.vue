@@ -8,12 +8,12 @@
 
 <script>
 // import Header from './components/Header.vue'
-import Navigation from './components/Navigation.vue'
+import Navigation from "./components/Navigation.vue";
 export default {
-  name: 'app',
+  name: "app",
   components: {
-    navigation: Navigation,
+    navigation: Navigation
     // appHeader: Header,
   }
-}
+};
 </script>
