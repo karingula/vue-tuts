@@ -2,7 +2,7 @@
   <div id="container">
     <div id="contact-title">
       <span>Don't be a Stranger</span>
-      <br />
+      <br>
       <span class="greetings">Say Hello!</span>
     </div>
     <div class="wrapper">
@@ -13,16 +13,15 @@
           minim veniam.
         </p>
         <div class="contact-label">
-          <span class="notes" style="margin-top: 60px;">Need help?</span><br />
+          <span class="notes" style="margin-top: 60px;">Need help?</span><br>
           <a href="mailto:vingula01@gmail.com">vingula01@gmail.com</a>
         </div>
       </div>
       <div class="col-r" style="margin-bottom: 60px;">
         <b-form-group>
-          <b-form-input placeholder=" Name"></b-form-input> <br />
-          <b-form-input placeholder=" E-mail"></b-form-input> <br />
-          <b-form-textarea placeholder="What are you writing about?" rows="7">
-          </b-form-textarea>
+          <b-form-input placeholder=" Name" /> <br>
+          <b-form-input placeholder=" E-mail" /> <br>
+          <b-form-textarea placeholder="What are you writing about?" rows="7" />
           <div class="flex">
             <b-button class="btn" type="submit" variant="light">
               Send Over
