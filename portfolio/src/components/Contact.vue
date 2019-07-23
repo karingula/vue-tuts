@@ -31,8 +31,13 @@
           /> <br>
           <span>{{ veeErrors.first('email') }}</span>
           <b-form-textarea placeholder="What are you writing about?" rows="7" />
-          <div class="flex">
+          <div v-if="!veeErrors.any()" class="valid-btn">
             <b-button class="btn" type="submit" variant="light">
+              Send Over
+            </b-button>
+          </div>
+          <div v-if="veeErrors.any()" class="invalid-btn">
+            <b-button class="btn" type="submit" variant="light" :disabled="veeErrors.any()">
               Send Over
             </b-button>
           </div>
@@ -49,8 +54,7 @@ export default {
       form: {
         name: "",
         email: {
-          value: "",
-          isvalid: null
+          value: ""
         },
         message: ""
       }
