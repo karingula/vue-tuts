@@ -12,9 +12,9 @@ Vue.use(VeeValidate, {
   // This is the default
   inject: true,
   // Important to name this something other than 'fields'
-  fieldsBagName: 'veeFields',
+  fieldsBagName: "veeFields",
   // This is not required but avoids possible naming conflicts
-  errorBagName: 'veeErrors'
+  errorBagName: "veeErrors"
 });
 new Vue({
   router,

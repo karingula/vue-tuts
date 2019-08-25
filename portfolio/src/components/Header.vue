@@ -1,10 +1,7 @@
 <template>
-    <header>
-        <div class="container">
-        </div>
-    </header>
+  <header>
+    <div class="container"></div>
+  </header>
 </template>
 
-
-<script>
-</script>
+<script></script>

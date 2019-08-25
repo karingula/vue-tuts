@@ -1,19 +1,17 @@
 <template>
   <div id="app">
-    <navigation />
-    <!-- <app-header></app-header> -->
     <router-view />
   </div>
 </template>
 
-<script>
-// import Header from './components/Header.vue'
-import Navigation from "./components/Navigation.vue";
-export default {
-  name: "PortfolioApp",
+<script lang="ts">
+import {Component, Vue} from 'vue-property-decorator';
+import Home from './views/Home.vue';
+
+@Component({
   components: {
-    navigation: Navigation
-    // appHeader: Header,
+    Home
   }
-};
+})
+export default class App extends Vue {}
 </script>
