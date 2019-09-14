@@ -1,5 +1,5 @@
 <template>
-  <b-navbar class="navbar-section" fixed="top" :sticky="true">
+  <b-navbar class="navbar-section" fixed="top" sticky="true">
     <b-navbar-brand class="brand" href="#page-top">V</b-navbar-brand>
     <b-navbar-nav class="ml-auto nav-section">
       <ul class="nav-links">

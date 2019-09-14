@@ -1,17 +1,17 @@
 <template>
   <div id="app">
+    <Navigation />
     <router-view />
   </div>
 </template>
 
 <script lang="ts">
 import {Component, Vue} from 'vue-property-decorator';
-import Home from './views/Home.vue';
-import Contact from "@/components/Contact.vue";
+import Navigation from "@/components/Navigation.vue"; // @ is an alias to /src
 
 @Component({
   components: {
-    Home
+    Navigation
   }
 })
 export default class App extends Vue {}
