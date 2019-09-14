@@ -4,8 +4,8 @@ import router from "./router";
 import store from "./store";
 import "./registerServiceWorker";
 import "./assets/scss/styles.scss";
-import BootstrapVue from 'bootstrap-vue';
-import VeeValidate from 'vee-validate';
+import BootstrapVue from "bootstrap-vue";
+import VeeValidate from "vee-validate";
 
 Vue.config.productionTip = false;
 Vue.use(BootstrapVue);
